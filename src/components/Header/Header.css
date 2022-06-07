@@ -1,0 +1,26 @@
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    position: fixed;
+}
+
+.icon-home{
+    height: 39px;
+    width: 43px;
+}
+
+.logo-name::before{
+    content: '';
+    height: 50px;
+    border-left: 2px solid black;
+    margin: 0 50px;
+}
+.logo-name{
+    text-transform: uppercase;
+    font-family: 'Circe', sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+}
+
