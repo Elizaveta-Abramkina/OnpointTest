@@ -1,20 +1,20 @@
 import React from 'react';
 import './Home.css'
-import iconArrow from '../../assets/img/arrow.png'
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
 const Home = () => {
+
+
   return (
     <div className='home'>
-
-      <p className='text'>
-        <span className='simple-text'>привет,<br/></span>это <span>не</span> коммерческое задание
-      </p>
-      <button className='button'>
-        <span className='img-wrapper'><img src={iconArrow}/></span>
-        <p>Что дальше?</p>
-      </button>
-
-
+      <div className='home-content'>
+        <p className='simple-text'>привет,</p>
+        <p>это <span className='accent-text'>не</span></p>
+        <p>коммерческое </p>
+        <div>
+          <p>задание</p>
+          <ButtonComponent text={'Что дальше?'}/></div>
+      </div>
     </div>
   );
 };

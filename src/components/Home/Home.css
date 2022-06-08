@@ -1,80 +1,39 @@
 .home {
-    height: 100%;
-    display: flex;
+   display: flex;
     align-items: center;
-}
-
-.home-content {
-    display: flex;
+    position: fixed;
+    width: 100%;
+    margin-top:165px ;
+    margin-left: 70px;
 }
 
 .simple-text {
     font-family: 'DINPro', sans-serif;
-    font-size: 54px;
+    font-size: 27px;
+    line-height: 57px;
 }
-
-.text {
-    font-family: 'Poppins';
-    /*font-size: 160px;*/
-    /*line-height: 230px;*/
+.accent-text {
+    font-family: 'Gilroy Extrabold', sans-serif;
+    font-weight: bold;
+}
+.home-content {
+    font-family: 'Gilroy Light', sans-serif;
+    font-size: 110px;
+    line-height: 118px;
     font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
 }
-
-.button {
+.home-content div {
     display: flex;
     align-items: center;
-    width: 580px;
-    height: 160px;
-    background-color: #ff6a9f;
-    border-radius: 80px;
-    border: none;
-    font-size: 30px;
-    font-family: 'DINPro', sans-serif;
+}
+.home-content p{
+    display: inline-block;
 }
 
-/*.img-wrapper::before {*/
-/*    content: '';*/
-/*    width: 120px;*/
-/*    height: 120px;*/
-/*    background: linear-gradient(132deg, rgba(43, 75, 89, .38), rgba(255, 255, 255, .55) 100%);*/
-/*}*/
-
-
-.img-wrapper {
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(132deg, rgba(43, 75, 89, .14) , rgba(255, 255, 255, .25) 100%);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 40px;
+.home-content .button-wrapper {
+    display: inline-block;
+    margin-left: 50px;
 }
-
-.img-wrapper::after {
-    content: '';
-    width: 100px;
-    height: 100px;
-    background: black;
-    position: absolute;
-    top:10px;
-    left: 10px;
-    border-radius: 50%;
-}
-
-.img-wrapper img {
-    z-index: 5;
-    position: absolute;
-}
-/*.img-wrapper {*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    margin: 40px;*/
-/*    padding: 10px;*/
-/*    border-radius: 50%;*/
-/*    background-color: black;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/

@@ -1,6 +1,30 @@
 .app{
-    position: relative;
-    background: url('assets/img/bg.png');
-    padding:  50px 90px  30px 140px;
+    height: 100vh;
+    background: url('assets/img/bg.png') ;
+    background-size: cover;
+    transition: background-position-x 0.5s ;
 }
 
+.element-wrapper {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+}
+
+@keyframes left-swipe {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes right-swipe {
+    from {
+        right: 100%;
+    }
+    to {
+        right: 0;
+    }
+}

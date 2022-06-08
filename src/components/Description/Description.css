@@ -1,0 +1,18 @@
+.description {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    min-width: 100%;
+}
+
+.bottle-img {
+    width: 228px;
+    bottom: -30px;
+}
+
+.description-content {
+    display: flex;
+    flex-direction: row;
+    width: 720px;
+}

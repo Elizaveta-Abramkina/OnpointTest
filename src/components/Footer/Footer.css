@@ -1,4 +1,6 @@
 .footer {
     position: fixed;
-    bottom: 0;
+    height: 8px;
+    left:70px;
+    bottom: 30px;
 }

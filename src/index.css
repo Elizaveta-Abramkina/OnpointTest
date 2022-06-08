@@ -2,11 +2,10 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Poppins';
-
 }
-p,h1,h2,h3,h4,h5,h6 {
+p,span, h1,h2,h3,h4,h5,h6 {
     margin: 0;
+    padding: 0;
 }
 * {
     box-sizing: border-box;
@@ -15,19 +14,3 @@ button {
     padding: 0;
 }
 
-/*@font-face {*/
-/*  font-family: 'Gilroy Light';*/
-/*   src: url('assets/fonts/Gilroy-Light.eot');*/
-/*   src: url('assets/fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),*/
-/*  url('assets/fonts/Gilroy-Light.woff') format('font-woff'),*/
-/*  url('assets/fonts/Gilroy-Light.ttf') format('font-ttf');*/
-/*  font-weight: normal;*/
-/*   font-style: normal;*/
-/*}*/
-@font-face {
-    font-family: 'Poppins';
-    /*src: url('assets/fonts/Poppins-Regular.woff2') format('font-woff2'),*/
-    url('assets/fonts/Poppins-Regular.ttf') format('font-ttf');
-    font-weight: normal;
-    font-style: normal;
-}

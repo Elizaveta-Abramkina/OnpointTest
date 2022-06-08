@@ -15,9 +15,9 @@ const PATHS = {
 const config: Configuration = {
   mode: "development",
   output: {
-    filename: 'bundle.js',
+    filename:"bundle-[hash].js",
     path: path.resolve(__dirname, 'dist'),
-    // publicPath: PATHS.build
+    publicPath: "/",
   },
   entry: "./src/index.tsx",
   module: {
@@ -41,36 +41,21 @@ const config: Configuration = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+        type: "asset",
       },
       {
-        test: /\.(woff|woff2)$/,
-        use: {
-          loader: 'url-loader',
-        },
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/'
-            }
-          }
-        ]
+        test: [/\.(woff|eot|mp4)$/],
+        type: 'asset/resource',
+        generator: {
+          filename: '[name][ext]'
+        }
       }
-      // { test: /\.(eot|svg|ttf|woff|woff2)$/, loader: 'file?name=[name].[ext]'}
     ],
   },
 
   resolve: {
+
     extensions: [".tsx", ".ts", ".js"],
   },
   plugins: [
