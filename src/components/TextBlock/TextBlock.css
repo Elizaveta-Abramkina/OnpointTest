@@ -1,5 +1,15 @@
 .text-block{
-        background-color: maroon;
+        background: white;
         border-radius: 30px;
         margin: 20px;
+        box-shadow: 5px 5px 125px rgba(157,185,198, 0.39);
+        position: relative;
+        padding: 50px 42px;
 }
+
+.text-block img {
+        position: absolute;
+        top: -30px;
+        width: 70px;
+}
+

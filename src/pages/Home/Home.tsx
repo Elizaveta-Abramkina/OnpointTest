@@ -1,13 +1,13 @@
 import React from 'react';
 import './Home.css'
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
+
 
 const Home = () => {
 
-
   return (
     <div className='home'>
-      <div className='home-content'>
+      <div className='home-content main-text'>
         <p className='simple-text'>привет,</p>
         <p>это <span className='accent-text'>не</span></p>
         <p>коммерческое </p>

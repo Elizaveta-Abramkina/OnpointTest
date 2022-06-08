@@ -1,31 +1,33 @@
-
 @font-face {
     font-family: 'Circe';
-    src: url("Circe-Regular.woff") format('woff');
+    src: url("Circe-Regular.woff") format('font-woff');
 }
 
 @font-face {
-    font-family:' Gilroy';
-    src: url("Gilroy-Regular.woff") format('woff');
+    font-family: ' Gilroy';
+    src: url("Gilroy-Regular.woff") format('font-woff');
 }
 
 @font-face {
-    font-family:' Gilroy Extrabold';
-    src: url("Gilroy-Extrabold.woff") format('woff');
+    font-family: ' Gilroy Extrabold';
+    src: url("Gilroy-Extrabold.woff") format('font-woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'DINPro';
-    src: url("DINPro.woff") format('woff');
+    src: url("DINPro.woff") format('font-woff');
 }
 
 @font-face {
     font-family: 'Gilroy Light';
-    src: url('Gilroy-Light.eot');
-    src: url('Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-    url('Gilroy-Light.woff') format('font-woff'),
+    src: url('Gilroy-Light.woff') format('font-woff'),
     url('Gilroy-Light.ttf') format('truetype');
-    font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('MyriadPro-Regular.woff') format('font-woff'),
+    url('MyriadPro-Regular.woff') format('truetype');
 }

@@ -7,23 +7,10 @@
     margin-left: 70px;
 }
 
-.simple-text {
-    font-family: 'DINPro', sans-serif;
-    font-size: 27px;
-    line-height: 57px;
-}
-.accent-text {
-    font-family: 'Gilroy Extrabold', sans-serif;
-    font-weight: bold;
-}
 .home-content {
-    font-family: 'Gilroy Light', sans-serif;
-    font-size: 110px;
-    line-height: 118px;
-    font-weight: lighter;
     display: flex;
     flex-direction: column;
-    text-transform: uppercase;
+
 }
 .home-content div {
     display: flex;

@@ -1,10 +1,10 @@
 import React, { useState} from 'react';
 import './App.css'
-import './assets/fonts/fonts.css'
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Description from './components/Description/Description';
-import Home from "./components/Home/Home";
+import BrendPage from './pages/BrendPage/BrendPage';
+import Home from "./pages/Home/Home";
+import Description from "./components/Description/Description";
 /* eslint-disable */
 
 
@@ -15,7 +15,7 @@ const App = () => {
   const [swipe, setSwipe] = useState<'left-swipe' | 'right-swipe'| null>(null)
 
   const position = ['left', 'center', 'right']
-  const element = [<Home/>, <Description/>, <Home/>]
+  const element = [<Home/>, <Description/>, <BrendPage/>]
   const style = {
     app: {backgroundPositionX: `${position[value]}`},
     appScroll: {animation: `${swipe} 0.5s`}
@@ -31,7 +31,7 @@ const App = () => {
   const onTouchMove = (e: React.TouchEvent<HTMLDivElement>) => setTouchEnd(e.targetTouches[0].pageX)
 
   const resetSwipe = () => {
-    setTimeout(()=>setSwipe(null), 550)
+    setTimeout(()=>setSwipe(null), 500)
   }
 
   const onTouchEnd = () => {

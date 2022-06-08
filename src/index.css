@@ -13,4 +13,26 @@ p,span, h1,h2,h3,h4,h5,h6 {
 button {
     padding: 0;
 }
+.cards-text {
+    font-family: 'MyriadPro', sans-serif;
+    font-size: 25px;
+}
+.simple-text {
+    font-family: 'DINPro', sans-serif;
+    font-size: 27px;
+    line-height: 33px;
+    text-transform: uppercase;
+}
 
+.accent-text {
+    font-family: 'Gilroy Extrabold', sans-serif;
+    font-weight: bold;
+}
+
+.main-text {
+    font-family: 'Gilroy Light', sans-serif;
+    font-size: 110px;
+    line-height: 118px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}

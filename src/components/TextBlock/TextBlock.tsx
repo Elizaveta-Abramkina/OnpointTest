@@ -7,7 +7,7 @@ interface IProps {
 }
 const TextBlock = ({icon, text}:IProps) => {
   return (
-    <div className='text-block'>
+    <div className='text-block cards-text'>
       <img src={icon} alt={icon}/>
       <p>{text}</p>
     </div>
