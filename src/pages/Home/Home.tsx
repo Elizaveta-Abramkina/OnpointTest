@@ -13,7 +13,7 @@ const Home = () => {
         <p>коммерческое </p>
         <div>
           <p>задание</p>
-          <ButtonComponent text={'Что дальше?'}/></div>
+          <ButtonComponent text={'Что дальше?'} /></div>
       </div>
     </div>
   );

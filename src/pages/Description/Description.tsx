@@ -24,7 +24,7 @@ const Description = () => {
       const positionScrollButton = (positionClient * heightScroll) / clientHeight
       const heightText = element.scrollHeight
       const positionText = (positionScrollButton * heightText) / heightScroll
-      if (positionScrollButton > 0 && positionScrollButton < heightScroll - 85) {
+      if (positionScrollButton > 0 && positionScrollButton < heightScroll - 100) {
         setPositionButton(positionScrollButton)
         element.scrollTo(0, positionText)
       }

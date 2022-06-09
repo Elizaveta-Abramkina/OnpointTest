@@ -1,0 +1,11 @@
+.benefit-item-number {
+    font-family: 'Gilroy Extrabold', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #8cc9e8;
+    margin-bottom: 10px;
+}
+
+.benefit-item {
+    margin-bottom: 20px;
+}
