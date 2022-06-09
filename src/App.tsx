@@ -14,8 +14,22 @@ const App = () => {
   const [value, setValue] = useState<number>(0)
   const [swipe, setSwipe] = useState<'left-swipe' | 'right-swipe'| null>(null)
 
+  const rightSwipe=()=>{
+    setSwipe('right-swipe')
+    setValue(value - 1)
+  }
+  const leftSwipe = ()=>{
+    setSwipe('left-swipe')
+    setValue(value + 1 )
+  }
+
+  const goHome = ()=>{
+    console.log('home')
+    setValue(0)
+  }
+
   const position = ['left', 'center', 'right']
-  const element = [<Home/>, <Description/>, <BrendPage/>]
+  const element = [<Home functionSwipe={leftSwipe}/>, <Description/>, <BrendPage/>]
   const style = {
     app: {backgroundPositionX: `${position[value]}`},
     appScroll: {animation: `${swipe} 0.5s`}
@@ -41,12 +55,12 @@ const App = () => {
     const isRightSwipe = distance < -minSwipeDistance
 
     if (isLeftSwipe && value <= 1 && value >=0){
-      setSwipe('left-swipe')
-      setValue(value + 1 )}
+      leftSwipe()
       resetSwipe()
+    }
+
     if (isRightSwipe && value >= 1) {
-      setSwipe('right-swipe')
-      setValue(value - 1)
+      rightSwipe()
       resetSwipe()
     }
   }
@@ -55,8 +69,9 @@ const App = () => {
   return (
     <div className='app' style={style.app} onTouchStart={onTouchStart} onTouchMove={onTouchMove}
          onTouchEnd={onTouchEnd}>
-      <Header/>
+
         <div className='element-wrapper' style={style.appScroll}>
+          <Header functionHome={goHome}/>
           {element[value]}
         </div>
       <Footer/>

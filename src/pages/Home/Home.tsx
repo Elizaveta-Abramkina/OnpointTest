@@ -2,8 +2,11 @@ import React from 'react';
 import './Home.css'
 import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
 
+interface IProps {
+  functionSwipe:()=>void
+}
 
-const Home = () => {
+const Home = ({functionSwipe}:IProps) => {
 
   return (
     <div className='home'>
@@ -13,7 +16,7 @@ const Home = () => {
         <p>коммерческое </p>
         <div>
           <p>задание</p>
-          <ButtonComponent text={'Что дальше?'} /></div>
+          <ButtonComponent text={'Что дальше?'} onClick={functionSwipe} /></div>
       </div>
     </div>
   );

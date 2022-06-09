@@ -1,11 +1,17 @@
 .benefits {
     margin-top: -40px;
-    padding-right: 70px;
+    margin-right: 100px;
     width: 475px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.active {
+ border: none;
+    background-color: #ff6a9f;
+}
+
 .navigation {
     position: absolute;
     bottom: 25px;
