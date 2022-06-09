@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import BrendPage from './pages/BrendPage/BrendPage';
 import Home from "./pages/Home/Home";
-import Description from "./components/Description/Description";
+import Description from "./pages/Description/Description";
 /* eslint-disable */
 
 
