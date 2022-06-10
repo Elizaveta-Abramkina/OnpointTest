@@ -1,0 +1,44 @@
+.description {
+    height: 100vh;
+    background-image: url('assets/img/descriptopnImg/sperm1.png'),
+    url('assets/img/descriptopnImg/sperm2.png'),
+    url('assets/img/descriptopnImg/sperm3.png'),
+    url('assets/img/descriptopnImg/sperm4.png'),
+    url('assets/img/descriptopnImg/sperm5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: sperm-animation 2s;
+}
+
+@keyframes sperm-animation {
+    from {
+        background-position: 250px 250px, 150px 100px, 400px 400px, 250px 250px, 300px 300px;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+.bottle-img {
+    position: absolute;
+    box-sizing: content-box;
+    padding: 70px 70px 0 50px;
+    background-image: url('assets/img/brendImg/1.png'),
+    url('assets/img/brendImg/2.png'),
+    url('assets/img/brendImg/4.png'),
+    url('assets/img/brendImg/3.png'),
+    url('assets/img/brendImg/7.png');
+    background-repeat: no-repeat;
+    transition: 5s;
+}
+
+/*.home {*/
+/*    background-image: url('assets/img/homeImg/Layer 7.png'),*/
+/*    url('assets/img/homeImg/bakti_1.png'),*/
+/*    url('assets/img/homeImg/pink_sperm.png'),*/
+/*    url('assets/img/homeImg/pink_sperm_1.png'),*/
+/*    url('assets/img/homeImg/Layer 8.png'),*/
+/*    url('assets/img/homeImg/Layer 5.png'),*/
+/*    url('assets/img/homeImg/Layer 4.png');*/
+/*    background-repeat: no-repeat;*/
+/*}*/
